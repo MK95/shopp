@@ -9,46 +9,56 @@
 <body>
 	<div class="nav-left">
 		<h1>SHOPP</h1>
-		<button>NEW LIST</button>
-		<form class=''>
-			<input type="text" name="new-item" placeholder="          NEW ITEM"><br>
-			<button class="add">ADD</button>
-		</form>
+		<!--<button class='reset'>NEW LIST</button>-->
 	</div>
 	<div class="main-list">
-		<input type='text' name='list-name' placeholder='LIST NAME'>
-				<div id="item">EGGS
-					<span id='number'>1</span>
-					<span id='delete'>X</span>
+
+		<!--  name of list	-->
+		<input class="list-name" type='text' name='list-name' placeholder='LIST NAME'>
+		
+				<!--add a row-->
+				<span id='add-row'>ADD ITEM</span>
+					<!--  list item input	-->
+					<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">
+						<!--  list row number	-->
+						<span id='number'>1</span>
+							<!--  delete button	-->
+							<span id='delete'>X</span>		
 				</div>
-				<div id="item">CHEESE	
+
+<!--
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">	
 					<span id='number'>2</span>
 					<span id='delete'>X</span>
 				</div>
-				<div id="item">BALOGNA	
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">	
 					<span id='number'>3</span>
 					<span id='delete'>X</span>
 				</div>
-				<div id="item">HAM	
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">	
 					<span id='number'>4</span>
 					<span id='delete'>X</span>
 				</div>
-				<div id="item">SPAM	
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">	
 					<span id='number'>5</span>
 					<span id='delete'>X</span>
 				</div>
-				<div id="item">PAM
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">
 					<span id='number'>6</span>	
 					<span id='delete'>X</span>
 				</div>
-				<div id="item">BAM	
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">	
 					<span id='number'>7</span>
 					<span id='delete'>X</span>
 				</div>
-				<div id="item">A BAG OF LARGE SPLAM	
+				<div id="item"><input id="list-item" type="text" name="new-item" placeholder="NEW ITEM">
 					<span id='number'>8</span>
 					<span id='delete'>X</span>
 				</div>
+-->
 	</div>	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

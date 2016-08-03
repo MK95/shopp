@@ -9,6 +9,10 @@ button {
 	border-radius:4px;
 }
 
+input {
+	border:none;
+	font-family:'lato';
+}
 .nav-left input {
 	border: 5px solid white; 
 	font-family:'lato';
@@ -43,16 +47,29 @@ button {
 	position:fixed;
 	padding:15px;
 }
-.main-list input {
-	border:none;
-	font-family:'lato';
+
+.main-list > input.list-name {
 	font-weight: 300;
 	font-size: 24px;
 	margin-left:50px;
 	margin-bottom:25px;
 }
+#list-item, #number, #delete{
+	display:none;
+}
 div#item {
 	padding: 15px 0 15px 50px;
+}
+.main-list div#item #list-item{
+	font-weight:200;
+	font-size:14px;
+}
+span#add-row {
+	float:right;
+	background-color:#4E9258;
+	color:#fcfcfc;
+	padding:5px;
+	border-radius: 4px 1px; 
 }
 span#number {
 	float:left;
@@ -66,3 +83,9 @@ span#delete {
 	padding:5px;
 	border-radius: 4px 1px; 
 }
+#add-row,
+#delete:hover {
+	cursor: pointer;
+	background-color:indianred;
+}
+
